@@ -14,7 +14,7 @@ token = os.environ.get('TOKEN')
 prefix = '!'
 client=commands.Bot(command_prefix=prefix)
 
-cogs=['cogs.react','cogs.git','cogs.greetings','cogs.steal']
+cogs=['cogs.react','cogs.git','cogs.greetings','cogs.steal','cogs.role']
 
 for cog in cogs:
     client.load_extension(cog)
