@@ -11,7 +11,7 @@ class Stealing(commands.Cog) :
     async def steal(self,ctx):
         if not ctx.bot and ctx.reaction.message.content == "steal":
             await ctx.reaction.remove(ctx.bot)
-        # await reaction.message.add_reaction(reaction.emoji)
+            # await reaction.message.add_reaction(reaction.emoji)
             await ctx.reaction.message.add_reaction('🇸')
             await ctx.reaction.message.add_reaction('🇹')
             await ctx.reaction.message.add_reaction('🇪')
