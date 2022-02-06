@@ -7,11 +7,17 @@ class Prohibition(commands.Cog):
     
     @commands.Cog.listener()
     async def on_message(self,message):
-        msg=str(message.content).lower().find('matar')
-        msg2=str(message.content).lower().find('nirbhay')
-        if not msg or not msg2 == -1 :
-            await message.delete()
-            
+        curseWords = ['matar','levelled']
+        msg = message.content.lower()
+        for word in curseWords:
+            if word in msg:
+                await message.delete()
+                break
+    
+        
+
+        
+    
 
 def setup(client):
     client.add_cog(Prohibition(client))
