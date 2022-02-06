@@ -8,7 +8,8 @@ class Prohibition(commands.Cog):
     @commands.Cog.listener()
     async def on_message(self,message):
         msg=str(message.content).lower().find('matar')
-        if not msg == -1 :
+        msg2=str(message.content).lower().find('nirbhay')
+        if not msg or not msg2 == -1 :
             await message.delete()
             
 

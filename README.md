@@ -7,3 +7,8 @@
 ###### !steal
 ###### !gitsearch {username}
 ###### !help
+###### !createchannel {name} {channeltype}
+###### !role {name of existing role}
+###### !react
+###### !renamechannel {name} {new name}
+###### !deletechannel {name}
