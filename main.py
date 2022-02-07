@@ -1,5 +1,3 @@
-
-
 from http import client
 import os
 
@@ -22,7 +20,8 @@ for cog in cogs:
 
 @client.event
 async def on_ready():
-    print('we have logged in', format(client))
+    print('Bot switched on : {}'.format(client.user.name))
+    print('Bot id : {}'.format(client.user.id))
 
 
 
