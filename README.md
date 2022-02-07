@@ -10,7 +10,10 @@
 
 <hr>
 
-`!role {name of existing role}` `!createrole {name of role}` `!deleterole {name of existing role}` `!removerole  {name of existing role}`
+`!role {name of existing role}` `!createrole {name of role}` `!deleterole {name of existing role}` 
+<br>
+<br>
+`!removerole  {name of existing role}`
 
 <hr>
 
